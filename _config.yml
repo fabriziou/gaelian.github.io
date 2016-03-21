@@ -1,6 +1,6 @@
 name: Binary Balance
 description: Life on the digital knife edge
-url: http://blog.binarybalance.com.au
+url: https://blog.binarybalance.com.au
 author:
   name: Gaelian Ditchburn
 
@@ -19,9 +19,7 @@ defaults:
 sass:
   sass_dir: _scss
   style: compressed
-markdown: redcarpet
-redcarpet:
-  extensions: ["footnotes", "hard_wrap", "no_intra_emphasis", "autolink", "strikethrough"]
+markdown: kramdown
 permalink: /:year/:month/:day/:title
 exclude: ["gaelian.github.io.sublime-project", "Gemfile", "Gemfile.lock", "README.md"]
 excerpt_separator: <!--more-->
