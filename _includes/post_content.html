@@ -4,7 +4,7 @@
   <div class="blog-post-meta">
     {{ page.date | date: '%B %d, %Y' }} -
     {% for tag in page.tags %}
-      <a href="tags/#{{ tag }}">{{ tag }}</a>
+      <a href="/tags/#{{ tag }}">{{ tag }}</a>
     {% endfor %}
   </div>
   <div id="callout">
