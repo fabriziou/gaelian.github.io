@@ -23,4 +23,4 @@ This gem in its current form is quite tied to Rails and the normal convention in
 
 If you're looking for something in Ruby that does take into account the Notifo 'service' side of things as well and isn't tied to Rails specifically, [try this library](http://github.com/jot/notifo).
 
-**Disclaimer:** I have no affiliation with Notifo whatsoever, I'm just like the cut of their jib.
+**Disclaimer:** I have no affiliation with Notifo whatsoever, I just like the cut of their jib.
