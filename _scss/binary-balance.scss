@@ -5,7 +5,23 @@ $light-green: #4c7b32;
 $anchor-green: #5e8846;
 $background-green: #dbe5d6;
 $border-green: #c9d7c2;
+$off-white: #cdddeb;
 $footer-height: 155;
+
+@mixin green-link-style {
+    &:link {
+      color: $anchor-green;
+    }
+    &:visited {
+      color: $anchor-green;
+    }
+    &:hover {
+      color: $anchor-green;
+    }
+    &:active {
+      color: $anchor-green;
+    }
+}
 
 html, body {
   height: 100%;
@@ -15,7 +31,12 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $light-black;
   a {
-    color: $anchor-green;
+    &:link {
+      color: $anchor-green;
+    }
+    &:visited {
+      color: $dark-green;
+    }
     &:hover {
       color: $anchor-green;
     }
@@ -49,6 +70,23 @@ body {
 
   /* Opera 11.10+ */
   background: -o-linear-gradient(top, $dark-green, $light-green);
+}
+
+.blog-nav {
+  a {
+    &:link {
+      color: $off-white;
+    }
+    &:visited {
+      color: $off-white;
+    }
+    &:hover {
+      color: #fff;
+    }
+    &:active {
+      color: $off-white;
+    }
+  }
 }
 
 @media all and (max-width: 553px) {
@@ -98,6 +136,7 @@ h2.blog-post-title {
       background-color: $background-green;
       border: 1px solid $border-green;
       padding: 1px 3px 1px 3px;
+      @include green-link-style;
   }
 }
 
@@ -118,6 +157,7 @@ h2.blog-post-title {
   border: 1px solid $border-green;
   a {
     text-decoration: underline;
+    @include green-link-style;
   }
 }
 
