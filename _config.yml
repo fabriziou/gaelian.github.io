@@ -20,6 +20,9 @@ sass:
   sass_dir: _scss
   style: compressed
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 permalink: /:year/:month/:day/:title
 exclude: ["gaelian.github.io.sublime-project", "Gemfile", "Gemfile.lock", "README.md"]
 excerpt_separator: <!--more-->
