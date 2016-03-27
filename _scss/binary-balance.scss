@@ -121,7 +121,7 @@ body {
 }
 
 .blog-post {
-  p > a {
+  p > a, li a {
     text-decoration: underline;
   }
 }
