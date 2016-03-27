@@ -8,19 +8,10 @@ $border-green: #c9d7c2;
 $off-white: #cdddeb;
 $footer-height: 155;
 
-@mixin green-link-style {
-    &:link {
-      color: $anchor-green;
-    }
-    &:visited {
-      color: $anchor-green;
-    }
-    &:hover {
-      color: $anchor-green;
-    }
-    &:active {
-      color: $anchor-green;
-    }
+@mixin default-link-style {
+  &:link, &:visited, &:hover, &:active {
+    color: $anchor-green;
+  }
 }
 
 html, body {
@@ -31,18 +22,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $light-black;
   a {
-    &:link {
-      color: $anchor-green;
-    }
-    &:visited {
-      color: $dark-green;
-    }
-    &:hover {
-      color: $anchor-green;
-    }
-    &:active {
-      color: $anchor-green;
-    }
+    @include default-link-style;
   }
   pre code {
       word-wrap: normal;
@@ -123,6 +103,18 @@ body {
 .blog-post {
   p > a, li a {
     text-decoration: underline;
+    &:link {
+      color: $anchor-green;
+    }
+    &:visited {
+      color: $dark-green;
+    }
+    &:hover {
+      color: $anchor-green;
+    }
+    &:active {
+      color: $anchor-green;
+    }
   }
 }
 
@@ -140,7 +132,7 @@ h2.blog-post-title {
       background-color: $background-green;
       border: 1px solid $border-green;
       padding: 1px 3px 1px 3px;
-      @include green-link-style;
+      @include default-link-style;
   }
 }
 
@@ -161,7 +153,7 @@ h2.blog-post-title {
   border: 1px solid $border-green;
   a {
     text-decoration: underline;
-    @include green-link-style;
+    @include default-link-style;
   }
 }
 
