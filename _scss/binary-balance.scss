@@ -44,11 +44,15 @@ body {
       color: $anchor-green;
     }
   }
+  pre code {
+      word-wrap: normal;
+      white-space: pre;
+  }
 }
 
 .wrapper {
   min-height: 100%;
-  margin: 0 auto -#{$footer-height}px; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -#{$footer-height}px; /* The bottom margin is the negative value of the footer's height. */
 }
 
 .blog-masthead {
@@ -113,7 +117,7 @@ body {
 }
 
 @media all and (min-width: 553px) and (-webkit-min-device-pixel-ratio: 2)  {
-  /* Set up high res logo image */
+  /* TODO: Set up high res images. */
 }
 
 .blog-post {
