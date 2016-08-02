@@ -75,6 +75,8 @@ So that’s the long and the short of it. If you’re looking at implementing a 
 
 **Disclaimer:** I have not received any remuneration from any of the services I’ve mentioned in this post, I’m just a normal customer of some of these services, who might like the cut of their respective jibs.
 
+**Update:** as of August 2016, Kloudsec has sadly shut their doors. I congratulate Kloudsec on getting as far as they did, they put together a great product. But startups are hard at the best of times and I wish nubela and friends all the best in their future endevours. As my second choice, I have since gone with CloudFlare for the time being. However, I don't like having to delegate my DNS to CloudFlare as it means the way I manage DNS settings for this and other sites I maintain is now fragmented across more than one service (for all my other DNS needs, I have traditionally used [DNSimple](https://dnsimple.com/) and have always been happy there). Sometime in the not too distant future I will be revamping my hosting setup in order to reconcile my DNS management once more and attain full end-to-end transport encryption for my blog, which will likely mean I will not be hosting my blog directly from GitHub Pages in the longer term.
+
 [^1]: I hear [BitBucket](https://bitbucket.org) gives private Git repos for free, as does [Visual Studio Team Services](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx), so if you’re not as embedded in GitHub as I am, you may like to check them out.
 
 [^2]: Yeah, I started my blog back when Textile was still the new hotness.
